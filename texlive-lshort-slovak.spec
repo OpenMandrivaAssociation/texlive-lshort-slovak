@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/slovak
+# catalog-date 2006-12-30 01:42:23 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-lshort-slovak
 Version:	20061230
 Release:	1
@@ -20,6 +26,7 @@ A Slovak translation of Oetiker's (not so) short introduction.
 %files
 %doc %{_texmfdistdir}/doc/latex/lshort-slovak/slshorte.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-slovak/src.zip
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -30,3 +37,5 @@ A Slovak translation of Oetiker's (not so) short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
