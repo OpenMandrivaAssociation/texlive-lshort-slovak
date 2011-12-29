@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.doc
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A Slovak translation of Oetiker's (not so) short introduction.
@@ -26,7 +24,6 @@ A Slovak translation of Oetiker's (not so) short introduction.
 %files
 %doc %{_texmfdistdir}/doc/latex/lshort-slovak/slshorte.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-slovak/src.zip
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -37,5 +34,3 @@ A Slovak translation of Oetiker's (not so) short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
