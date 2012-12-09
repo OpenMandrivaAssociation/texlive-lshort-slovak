@@ -34,3 +34,17 @@ A Slovak translation of Oetiker's (not so) short introduction.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061230-2
++ Revision: 753481
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061230-1
++ Revision: 718901
+- texlive-lshort-slovak
+- texlive-lshort-slovak
+- texlive-lshort-slovak
+- texlive-lshort-slovak
+
