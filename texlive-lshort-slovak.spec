@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-lshort-slovak
 Version:	20061230
-Release:	6
+Release:	7
 Summary:	Slovak introduction to LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/slovak
