@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/lshort/slovak
-# catalog-date 2006-12-30 01:42:23 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-lshort-slovak
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Slovak introduction to LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/slovak
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,24 +21,10 @@ A Slovak translation of Oetiker's (not so) short introduction.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061230-2
-+ Revision: 753481
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061230-1
-+ Revision: 718901
-- texlive-lshort-slovak
-- texlive-lshort-slovak
-- texlive-lshort-slovak
-- texlive-lshort-slovak
-
