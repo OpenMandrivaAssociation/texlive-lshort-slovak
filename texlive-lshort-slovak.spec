@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Slovak introduction to LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/slovak
+URL:		https://www.ctan.org/tex-archive/info/lshort/slovak
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-slovak.doc.r%{version}.tar.xz
